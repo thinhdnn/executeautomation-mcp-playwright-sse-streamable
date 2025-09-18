@@ -4,7 +4,7 @@
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-REPO_DIR="$SCRIPT_DIR/../mcp-playwright"
+REPO_DIR="$SCRIPT_DIR/mcp-playwright"
 PORT=${1:-9300}
 HOST=${2:-localhost}
 

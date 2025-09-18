@@ -2,8 +2,8 @@ version: '3.8'
 services:
   mcp-playwright:
     build:
-      context: ../
-      dockerfile: scripts/Dockerfile
+      context: ./
+      dockerfile: Dockerfile
     container_name: mcp-playwright-auto
     ports:
       - "9302:9300"

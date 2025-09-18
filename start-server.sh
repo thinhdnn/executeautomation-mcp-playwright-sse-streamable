@@ -6,7 +6,7 @@ HOST="${2:-localhost}"
 
 # Always resolve repo root (assume scripts/ is sibling of mcp-playwright/)
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-REPO_DIR="$SCRIPT_DIR/../mcp-playwright"
+REPO_DIR="$SCRIPT_DIR/mcp-playwright"
 EXECUTABLE="$REPO_DIR/dist/index.js"
 
 if [ ! -f "$EXECUTABLE" ]; then
