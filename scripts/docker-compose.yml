@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  mcp-playwright:
+    build:
+      context: ../
+      dockerfile: scripts/Dockerfile
+    container_name: mcp-playwright-auto
+    ports:
+      - "9302:9300"
+      - "6080:6080"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
